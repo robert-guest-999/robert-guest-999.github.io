@@ -8,6 +8,11 @@ window.MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 
+---
+title: "Electrochemistry"
+description: "Building a low-cost impedance spectrometer from scratch"
+---
+
 # Electrochemistry
 The general aim of this project is to build some different commonly used pieces of electrochemical characterisation equipment from scratch. The ultimate aim is to make an electrochemical impedance spectrometer and algorithmically implement the Distribution of Relaxation Times (DRT) analysis method ab initio.
 
