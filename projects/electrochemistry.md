@@ -1,3 +1,13 @@
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
 # Electrochemistry
 The general aim of this project is to build some different commonly used pieces of electrochemical characterisation equipment from scratch. The ultimate aim is to make an electrochemical impedance spectrometer and algorithmically implement the Distribution of Relaxation Times (DRT) analysis method ab initio.
 
