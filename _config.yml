@@ -1,2 +1,9 @@
-title: "Home"
+title: "Projects"
+description: "A collection of open-source hardware and electrochemistry projects"
+theme: jekyll-theme-cayman
+
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+show_downloads: false
