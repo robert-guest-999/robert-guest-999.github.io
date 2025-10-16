@@ -13,21 +13,38 @@ window.MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 
-The general aim of this project is to build some different commonly used pieces of electrochemical characterisation equipment from scratch. The ultimate aim is to make an electrochemical impedance spectrometer and algorithmically implement the Distribution of Relaxation Times (DRT) analysis method ab initio.
+The general aim of this project is to build some different commonly used pieces of electrochemical characterisation equipment from scratch. The ultimate aim is to make an electrochemical impedance spectrometer and algorithmically implement the Distribution of Relaxation Times (DRT) analysis method from scratch.
 
 # Background Theory
-Electrochemical systems can be analysed in many different ways, but almost all of them boil down to applying either a voltage or current profile and observing the results. The most simple example is Linear Sweep Voltammetry, which involves applying a linearly increasing potential between the working and counter electrode, and observing the current passed. Cyclic Voltammetry is an extention of this method which adds a negatively sloped potenetial ramp once the maximum value is reached. This provides additional information about the reversibility of the system.
+Electrochemical systems can be analysed in many different ways, but almost all of them boil down to applying either a voltage or current profile and observing the results. The most simple example is Linear Sweep Voltammetry, which involves applying a linearly increasing potential between the working and counter electrode, and observing the current passed. Cyclic Voltammetry is an extention of this method which adds a negatively sloped potential ramp once the maximum value is reached. This provides additional information about the reversibility of the system.
 
 # EIS
-Electrochemical Impedance Spectrometry (EIS) is a method in which a sinusoidal potential is applied to the system, and the effect of the oscillation frrequency is observed. A baseline DC potential is also applied.
+Electrochemical Impedance Spectrometry (EIS) involves measuring the system impedance at a range of different signal frequencies. A sinusoidal potential is applied to the system, and the effect of the oscillation frequency is observed. A baseline DC potential is also applied.
 
-The impedance response to a sinusoidal perturbation is expressed as:
+## Impedance Theory
+In the most simple case (a purely resistive circuit), the relationship between voltage and current is linear, time-invariant, and can be described using Ohm's law.
 
 $$
-Z(\omega) = \frac{V_0 e^{j\omega t}}{I_0 e^{j(\omega t + \phi)}} = \frac{V_0}{I_0} e^{-j\phi}
+R = \frac{V}{I}
 $$
 
-where $\phi$ is the phase shift between the current and voltage.
+An extension of this concept is to consider the impact of a periodically oscillating voltage:
+
+$$V = V_{0}sin(\omega t)$$
+
+Ohm's law tells us that for a purely resistive circuit, the current will oscillate in phase with the voltage:
+
+$$I = I_{0}sin(\omega t)$$
+Hence,
+$$
+R = \frac{V}{I} = \frac{V_{0}sin(\omega t)}{I_{0}sin(\omega t)} = \frac{V_{0}}{I_{0}}
+$$
+
+Where $V_{0}, I_{0}$ are the maximum voltage and current amplitude respectively and $\omega = 2 \pi f$ is the angular frequency
+
+
+
+
 
 
 # The Plan
