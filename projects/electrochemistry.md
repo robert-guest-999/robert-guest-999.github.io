@@ -35,7 +35,9 @@ $$V = V_{0}sin(\omega t)$$
 Ohm's law tells us that for a purely resistive circuit, the current will oscillate in phase with the voltage:
 
 $$I = I_{0}sin(\omega t)$$
+
 Hence,
+
 $$
 R = \frac{V}{I} = \frac{V_{0}sin(\omega t)}{I_{0}sin(\omega t)} = \frac{V_{0}}{I_{0}}
 $$
